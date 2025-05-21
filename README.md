@@ -21,7 +21,7 @@
 - Hence Data Augmentation and Class Rebalancing techniques were applied using ImageDataGenerator, this involved randomly rotating, translating, flipping or zooming the images. 
 - Labels were extracted from folder names and one-hot encoded for compatibility with multi-class classification.
 
-### Performance Summary
+##### Performance Summary
 
 - Model with 3-layer CNN with BatchNormalization, Dropout, ReLU, and Softmax is used.
 - The model initially achieved 95.4% training accuracy but only 58% test accuracy, indicating overfitting.
