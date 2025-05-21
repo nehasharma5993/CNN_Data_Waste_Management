@@ -20,8 +20,18 @@
 - This suggests that the model may be biased towards the class with more images.
 - Hence Data Augmentation and Class Rebalancing techniques were applied using ImageDataGenerator, this involved randomly rotating, translating, flipping or zooming the images. 
 - Labels were extracted from folder names and one-hot encoded for compatibility with multi-class classification.
-### Before Augmentation
-### After Augmentation
+
+### Performance Summary
+
+- Model with 3-layer CNN with BatchNormalization, Dropout, ReLU, and Softmax is used.
+- The model initially achieved 95.4% training accuracy but only 58% test accuracy, indicating overfitting.
+- After augmentation, training accuracy dropped to a realistic 60.7%, aligning better with test accuracy.
+- Test accuracy improved slightly to 60%, showing reduced overfitting.
+- Cardboard, Food_Waste, Glass, and Metal showed significant gains in recall and precision.
+- Plastic had high precision but still suffered from low recall.
+- "Other" and "Paper" remained the most challenging classes.
+- Overall, data augmentation boosted robustness and improved real-world performance.
+- Further improvements can be made with transfer learning or better class balancing.
 
 
 ## Technologies Used
